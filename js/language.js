@@ -6,10 +6,11 @@ const languageVar = document.querySelector(".language-var");
 const adult = document.querySelector(".to-adult");
 const adultTop = document.querySelector(".to-adult__top");
 const adultBottom = document.querySelector(".to-adult__bottom");
-const btnSpeak = document.querySelectorAll(".button-speak"),
-      btnCopy = document.querySelectorAll(".button-copy"),
-      btnStar = document.querySelectorAll(".button-star"),
-      btnShare = document.querySelectorAll(".button-share");
+const rightIcon = document.querySelector(".main-box__right");
+const btnSpeak = rightIcon.querySelectorAll(".button-speak"),
+      btnCopy = rightIcon.querySelectorAll(".button-copy"),
+      btnStar = rightIcon.querySelectorAll(".button-star"),
+      btnShare = rightIcon.querySelectorAll(".button-share");
 
 
 function msgOn1(){
@@ -63,6 +64,7 @@ for (const click of languageSelect) {
   click.addEventListener("click",function(event){
   for (i = 0; i < languageSelect.length; i++){
     languageSelect[i].style.color="black";
+
   }
   click.style.color = "#2ed573";
   rightLanguage.classList.toggle("language-click");

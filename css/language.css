@@ -5,14 +5,20 @@
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .language,
-.to-adult{
+.to-adult,
+.language-box,
+.to-child{
   padding: 15px 20px;
 }
 
-.language{
+.language,
+.language-box{
   cursor: pointer;
   display: flex;
 }
 .language:hover{
+  color: #2ed573;
+}
+.language-box:hover{
   color: #2ed573;
 }

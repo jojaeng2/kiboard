@@ -1,25 +1,7 @@
-.main-box{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 50 50px;
-}
-.main-box__left,
-.main-box__right{
-  margin: 10px;
-  margin-top: 50px;
-  width: 500px;
-  height: 350px;
-  border: 1px solid rgba(0,0,0,0.2);
-}
-.main-box__left input{
-  border-style: none;
-  padding: 0 0;
-}
-.main-box__right{
+.main-box__left{
   position: relative;
 }
-.right-icon{
+.left-icon{
   position: absolute;
   display: flex;
   border-top: 1px solid rgba(0,0,0,0.1);
@@ -29,11 +11,10 @@
   opacity: 0.5;
   cursor: pointer;
 }
-.right-icon__bottom:hover{
+.left-icon__bottom:hover{
   color: #2ed573;
 }
-
-.right-icon__bottom{
+.left-icon__bottom{
   font-size: 1.5rem;
   border-right: 1px solid rgba(0,0,0,0.1);
   padding: 7px 10px;
@@ -41,10 +22,10 @@
   display: flex;
   justify-content: center;
 }
-.right-paper{
+.left-paper{
   position: relative;
 }
-.right-language{
+.left-language{
   position: absolute;
   background-color: white;
   top: 0;
@@ -53,27 +34,27 @@
 .language-click{
   display: block;
 }
-.right-language__wrap{
+.left-language__wrap{
   display: flex;
 }
-.right-language__wrap ul{
+.left-language__wrap ul{
   padding: 20px 30px;
 }
-.right-language__wrap li{
+.left-language__wrap li{
   padding: 10px 0;
   cursor: pointer;
 }
-.right-language__wrap li:hover{
+.left-language__wrap li:hover{
   color: #2ed573;
 }
-.to-adult{
+.to-child{
   display: flex;
   font-size: 12px;
   opacity: 0.6;
   transition: all .5s ease-in-out;
   cursor: pointer;
 }
-.to-adult__top{
+.to-child__top{
   display: flex;
   width: 24px;
   background-color: rgba(0,0,0,0.1);
@@ -81,19 +62,19 @@
   border-radius: 8px;
   border: 1px solid rgba(0,0,0,0.1);
 }
-.to-adult__bottom{
+.to-child__bottom{
   background-color: white;
   width: 50%;
   border-radius: 8px;
   transition: all .4s;
 }
-.adult__opacity{
+.child__opacity{
   opacity: 1;
 }
-.active-adult__top{
+.active-child__top{
   background-color: #2ed573;
 }
-.active-adult__bottom{
+.active-child__bottom{
   transform: translateX(12px);
 }
 .description{
@@ -101,7 +82,7 @@
   position: absolute;
   bottom: 40px;
 }
-.right-description{
+.left-description{
   font-size: 12px;
   width: 50px;
   height: 30px;
@@ -121,4 +102,24 @@
   box-shadow: 0px 0.1px 0.1px;
   color: black;
   transition: all .3s;
+}
+.textarea-language{
+  width: 98%;
+  resize: none;
+  border: none;
+  font-size: 14px;
+}
+.textarea-language:focus{
+  outline: none;
+}
+.main-box__left:hover{
+  border: 1px solid #2ed573;
+}
+.left-icon .button-share{
+  position: absolute;
+  right: 0;
+  border: 0.5px solid rgba(0,0,0,0.2);
+  font-size: 14px;
+  width: 70px;
+  height: 60%;
 }
