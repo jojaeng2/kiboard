@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Kiboard</title>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image⁄x-icon" href="https://pbs.twimg.com/profile_images/1240652281919373317/q-sC3VzF_400x400.jpg">
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <div class="status-bar">
       <div class="status-bar__logo">
-        <a href=""><i class="fas fa-kiwi-bird">Kiboard</i></a>
+        <a href=""><i class="fas fa-kiwi-bird"></i><span>Kiboard</span></a>
         <p>웹사이트 번역</p>
         <p>GYM</p>
         <p>사전</p>
@@ -20,6 +22,29 @@
       </div>
     </div>
 
+    <div class="record-box__show">
+      <p>〈
+      <span class="record-box__span record-box__hide">번역기록</span>
+      </p>
+
+    </div>
+    <div class="record-box record-box__hide">
+      <div class="hide-box__show">
+        <p>〉</p>
+      </div>
+      <div class="record-box__title">
+        <p>
+          번역기록
+        </p>
+        <p class="record-box__delete">
+          전체삭제
+        </p>
+      </div>
+      <ul class="js-toDoList">
+      </ul>
+    </div>
+
+
     <div class="main-box">
       <form class="main-box__left">
         <div class="box-title">
@@ -30,7 +55,7 @@
             <i class="fas fa-check"></i>
           </div>
           <div class="to-child">
-            <p>높임말</p>
+            <p>자동완성</p>
             <div class="to-child__top">
               <div class="to-child__bottom">
               </div>
@@ -94,8 +119,7 @@
             <span>즐겨찾기</span>
           </div>
         </div>
-
-        <textarea class="textarea-language" rows="13" ></textarea>
+        <textarea class="textarea-language" rows="13" placeholder="번역할 내용을 입력하세요."></textarea>
       </form>
 
 
@@ -117,7 +141,7 @@
         </div>
 
         <div class="right-paper">
-          1234
+          <span class="right-translation"></span>
           <div class="right-language">
             <div class="right-language__wrap">
               <ul>
@@ -182,6 +206,8 @@
 
     <script src="js/language.js"></script>
     <script src="js/enter.js"></script>
+    <script src="js/textsend.js"></script>
+    <script src="js/todo.js"></script>
     <script src="https://kit.fontawesome.com/b3b0f72b7e.js" crossorigin="anonymous"></script>
   </body>
 </html>

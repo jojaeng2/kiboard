@@ -1,3 +1,10 @@
+.fa-kiwi-bird{
+  color: #2ed573;
+  padding-right: 5px;
+}
+.status-bar__logo span{
+  font-weight: bolder;
+}
 .status-bar{
   display: flex;
   justify-content: space-between;

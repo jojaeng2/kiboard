@@ -122,4 +122,12 @@
   font-size: 14px;
   width: 70px;
   height: 60%;
+  background-color: #2ed573;
+  color: white;
+  font-weight: 600;
+  align-items: center;
+  opacity: 1;
+}
+.left-icon .button-share:hover{
+  opacity: 0.8;
 }
